@@ -112,19 +112,15 @@ int main(void)
 				cmd = getchar();
 				switch (cmd) {
 					case 'c':
-						printf("c received\n"); // Debug
 						state = CMD_ON;
 						break;
 					case 'd':
-						printf("d received\n"); // Debug
 						state = CMD_OFF;
 						break;
 					case 'e':
-						printf("e received\n"); // Debug
 						state = CMD_SET;
 						break;
 					default:
-						printf("other recieved\n"); // Debug
 						state = NACK;
 						break;
 				}
